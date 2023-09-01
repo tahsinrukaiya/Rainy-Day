@@ -1,0 +1,124 @@
+
+.text_container{
+    margin-bottom: 0;
+    margin-left: 250px;
+    padding: 15%;
+    background-image: url(../images/Mountain_re.jpg);
+    background-size: cover;
+    background-position: center 100%; 
+    width: 50%;
+}
+
+
+  .text_container h1{
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    background: rgba(0, 0, 0, .4);
+  }
+
+  .text_container p {
+    color: white;
+    background: rgba(0, 0, 0, .3);
+  }
+
+
+  /*--------------------------------HERE BEGINS THE FOOTER STYLING-------------------------------------------------*/
+
+footer{
+  background-color: #393E46;
+  color:white;
+  padding: 4rem 1rem;
+  height: 200px;
+  margin-top: 10%;
+}
+
+footer h3 {
+  font-weight:100;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+  transition:color 0.3s;
+}
+
+footer a:hover{
+   color:#945c54;
+
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer_main{
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.footer_column{
+  flex-basis: 200px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footer_links{
+  display: block;
+  width:max-content;
+  padding: 5px 10px;
+  margin: auto;
+}
+
+form input{
+  width: 300px;
+  height: 35px;
+  border-radius: 2px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+}
+
+form input:hover{
+transform: scale(1.1);
+}
+
+form button{
+  background: transparent;
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px;
+  font-size:15px;
+  cursor: pointer;
+  width: 200px;
+}
+
+form button:hover{
+color:#393E46;
+background-color: white;
+}
+
+.footer_bottom{
+  display: flex;
+  margin-bottom: 0;
+}
+
+.copyright{
+  margin-right: auto;
+}
+
+@media screen and (max-width:853px) {
+  .text_container{
+    font-size: 13px;
+  }
+
+  .text_container p{
+    font-size:2vw;
+  }
+  
+}

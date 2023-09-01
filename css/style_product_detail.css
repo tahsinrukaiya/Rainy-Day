@@ -1,0 +1,104 @@
+
+/*------------------------------------SINGLE PRODUCT DETAIL STYLING--------------------------------------*/
+ 
+.small_container{
+    margin-top: 150px;
+    margin-left: 2%;
+    display: flex;
+ }
+
+ .small_container .gallery img{
+    padding-top: 20px;
+    height: 400px;
+    width: 275px;
+    display: block;
+    width:100%;
+ }
+
+ .small_container h2{
+    color: #393E46;
+ }
+
+ .small_container h5{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #393E46;
+}
+
+.small_container select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.small_container input{
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid gray;
+}
+
+.gallery{
+    flex-basis: 47%;
+    background: #fcfbfa;
+}
+
+.details{
+    flex-basis: 53%;
+    background-color:white;
+    padding: 40px;
+    padding-left: 60px;
+    font-size: 16px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+button {
+    background-color:  #945c54;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    border: 0;
+    outline: 0;
+}
+.big_container{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/*--------------------------------HERE BEGINS THE FOOTER STYLING-------------------------------------------------*/
+
+footer{
+    background-color: #393E46;
+    color:white;
+    padding: 4rem 1rem;
+    height: 200px;
+    margin-top: 50% !important;
+  }
+  
+
+  @media only screen and (max-width:853px){
+    .small_container{
+        flex-direction: column;
+     }
+
+
+     .small_container .gallery img{
+        padding-top: 20%;
+        height: 50%;
+        width: 100%;
+        display: block;
+     }
+
+
+  }
+  
