@@ -6,6 +6,7 @@ const products = document.querySelector(".products");
 
 async function getJackets() {
   //fetch function in use 
+  products.innerHTML = "";
   const response = await fetch(jacket_url); // fetching the url
   const results = await response.json(); // making the url readable that is in JSON format
   const jacket = results; // we got an array of objects, putting that array in a variable
