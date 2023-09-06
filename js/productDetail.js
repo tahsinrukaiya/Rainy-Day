@@ -21,7 +21,7 @@ async function fetchJacketDetail() {
     return;
   }
 
-  const response = await fetch(`https://api.noroff.dev/api/v1/rainy-days/${Id}`);
+  const response = await fetch(`https://api.noroff.dev/api/v1/rainy-days/${itemId}`);
   const jacketDetail = await response.json();
   const titleContainer = document.querySelector(".jacketTitle");
   const jacketDetailContainer = document.querySelector(".product_container");
