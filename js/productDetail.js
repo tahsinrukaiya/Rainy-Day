@@ -1,37 +1,37 @@
 function getJacketIdFromQuery() {
-    const urlParams = new URLSearchParams(window.location.search);
-    console.log(urlParams.get("id"));
-    return urlParams.get("id");
+  const urlParams = new URLSearchParams(window.location.search);
+  console.log(urlParams.get("id"));
+  return urlParams.get("id");
 }
 
 function getJacketTitleFromQuery() {
-    const urlParams = new URLSearchParams(window.location.search);
-    console.log(urlParams.get("title"));
-    return urlParams.get("title");
+  const urlParams = new URLSearchParams(window.location.search);
+  console.log(urlParams.get("title"));
+  return urlParams.get("title");
 }
 
 //FUNCTION TO FETCH ITEM DETAIL USING ITEM ID AND TITLE-------------------------
 
 async function fetchJacketDetail() {
 
-    const itemId = getJacketIdFromQuery();
-    const itemTitle = getJacketTitleFromQuery();
+  const itemId = getJacketIdFromQuery();
+  const itemTitle = getJacketTitleFromQuery();
 
-    if (!itemId) {
-        return;
-    }
+  if (!itemId) {
+    return;
+  }
 
-    const response = await fetch("https://api.noroff.dev/api/v1/jokes/${itemId}");
-    const jacketDetail = await response.json();
-    const titleContainer = document.querySelector(".jacketTitle");
-    const jacketDetailContainer = document.querySelector(".small_container");
+  const response = await fetch("https://api.noroff.dev/api/v1/jokes/${itemId}");
+  const jacketDetail = await response.json();
+  const titleContainer = document.querySelector(".jacketTitle");
+  const jacketDetailContainer = document.querySelector(".product_container");
 
 
-    jacketDetailContainer.innerHTML += `<h2>${jacketDetail.id}: ${jacketDetail.setup}<h2>
+  jacketDetailContainer.innerHTML += `<h2>${jacketDetail.id}: ${jacketDetail.setup}<h2>
     <p>${jacketDetail}</p>
     
-    <div class="small_container">
-    <div class="gallery">
+    <div class="product_container">
+    <div class="image_container">
       <img src="" alt="">
     </div>
     <div class="details">
