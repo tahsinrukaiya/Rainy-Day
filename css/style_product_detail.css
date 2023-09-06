@@ -1,38 +1,37 @@
-
 /*------------------------------------SINGLE PRODUCT DETAIL STYLING--------------------------------------*/
- 
-.small_container{
+
+.product_container {
     margin-top: 150px;
     margin-left: 2%;
     display: flex;
- }
+}
 
- .small_container .gallery img{
+.product_container .image_container img {
     padding-top: 20px;
     height: 400px;
     width: 275px;
     display: block;
-    width:100%;
- }
+    width: 100%;
+}
 
- .small_container h2{
+.product_container h2 {
     color: #393E46;
- }
+}
 
- .small_container h5{
+.product_container h5 {
     margin: 20px 0;
     font-size: 22px;
     font-weight: bold;
     color: #393E46;
 }
 
-.small_container select{
+.product_container select {
     display: block;
     padding: 10px;
     margin-top: 20px;
 }
 
-.small_container input{
+.product_container input {
     width: 40px;
     height: 40px;
     padding-left: 10px;
@@ -42,14 +41,14 @@
     border: 1px solid gray;
 }
 
-.gallery{
+.image_container {
     flex-basis: 47%;
     background: #fcfbfa;
 }
 
-.details{
+.product_detail {
     flex-basis: 53%;
-    background-color:white;
+    background-color: white;
     padding: 40px;
     padding-left: 60px;
     font-size: 16px;
@@ -59,8 +58,9 @@ button a {
     text-decoration: none;
     color: white;
 }
+
 button {
-    background-color:  #945c54;
+    background-color: #945c54;
     color: white;
     font-size: 15px;
     font-weight: bold;
@@ -69,7 +69,8 @@ button {
     border: 0;
     outline: 0;
 }
-.big_container{
+
+.big_container {
     text-align: center;
     margin-top: 50px;
 }
@@ -77,28 +78,27 @@ button {
 
 /*--------------------------------HERE BEGINS THE FOOTER STYLING-------------------------------------------------*/
 
-footer{
+footer {
     background-color: #393E46;
-    color:white;
+    color: white;
     padding: 4rem 1rem;
     height: 200px;
     margin-top: 50% !important;
-  }
-  
+}
 
-  @media only screen and (max-width:853px){
-    .small_container{
+
+@media only screen and (max-width:853px) {
+    .small_container {
         flex-direction: column;
-     }
+    }
 
 
-     .small_container .gallery img{
+    .small_container .gallery img {
         padding-top: 20%;
         height: 50%;
         width: 100%;
         display: block;
-     }
+    }
 
 
-  }
-  
+}
