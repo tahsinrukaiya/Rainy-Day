@@ -21,7 +21,7 @@ async function fetchJacketDetail() {
     return;
   }
 
-  const response = await fetch("https://api.noroff.dev/api/v1/jokes/${itemId}");
+  const response = await fetch("https://api.noroff.dev/api/v1/rainy_days/${Id}");
   const jacketDetail = await response.json();
   const titleContainer = document.querySelector(".jacketTitle");
   const jacketDetailContainer = document.querySelector(".product_container");
@@ -37,7 +37,7 @@ async function fetchJacketDetail() {
     <div class="details">
       <p class="jacketId">${jacketDetail.itemId}</p>
       <h2 class="jacketTitle">${jacketDetail.itemTitle}<h2>
-          <h5 class="price">${jac}<h5>
+          <h5 class="price"><h5>
               <select class="sizes">
                 <option>Select Size</option>
                 <option>S</option>
