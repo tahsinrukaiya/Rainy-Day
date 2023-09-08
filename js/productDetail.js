@@ -32,9 +32,8 @@ async function fetchJacketDetail() {
 
 
   jacketDetailContainer.innerHTML +=
-    `<div class="product_container">
-    <div class="image_container">
-    <img src="${jacketDetail.image}" alt ="brown jacket"/>
+    `<div class="image_container">
+    <img src="${jacketDetail.image}" alt ="brown jacket" class="image_container"/>
     </div>
     <div class="product_detail">
       <p class="jacketId">Product Id: ${jacketDetail.id}</p>
