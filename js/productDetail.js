@@ -27,10 +27,12 @@ async function fetchJacketDetail() {
   const jacketDetailContainer = document.querySelector(".product_container");
 
 
-  jacketDetailContainer.innerHTML += `<h2>${jacketDetail.id}: ${jacketDetail.setup}<h2>
-    <p>${jacketDetail}</p>
-    
-    <div class="product_container">
+  //jacketDetailContainer.innerHTML += `<h2>${jacketDetail.id}: ${jacketDetail.setup}<h2>
+  // <p>${jacketDetail}</p>
+
+
+  jacketDetailContainer.innerHTML +=
+    `<div class="product_container">
     <div class="image_container">
     <img src="${jacketDetail.image}" alt ="brown jacket"/>
     </div>
