@@ -22,7 +22,7 @@ try {
         <img src="${jacket[i].image}" class="product-image"/>
         <h4 class="product_title">${jacket[i].title}</h4>
         <p class="product_price">${jacket[i].price}</p>
-        <a href="productDetail.html?id=${jacket.id}&title=${jacket.title}" class="btn">Buy Now</a>
+        <a href="productDetail.html?id=${jacket[i].id}&title=${jacket[i].title}" class="btn">Buy Now</a>
       </div> `;
     }
   }

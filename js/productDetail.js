@@ -32,13 +32,16 @@ async function fetchJacketDetail() {
     
     <div class="product_container">
     <div class="image_container">
-      <img src="" alt="">
+    <img src="${jacketDetail.image}" alt ="brown jacket"/>
     </div>
-    <div class="details">
-      <p class="jacketId">${jacketDetail.itemId}</p>
-      <h2 class="jacketTitle">${jacketDetail.itemTitle}<h2>
-          <h5 class="price"><h5>
-              <select class="sizes">
+    <div class="product_detail">
+      <p class="jacketId">Product Id: ${jacketDetail.id}</p>
+      <h2 class="jacketTitle">${jacketDetail.title}<h2>
+          <h6 class="gender">Gender: ${jacketDetail.gender}<h6>
+          <h6 class="price">Price: ${jacketDetail.price}<h6>
+          <h6 class="basecolor">Color: ${jacketDetail.baseColor}<h6>
+              <select class="sizes">Sizes: ${jacketDetail.sizes}
+            
                 <option>Select Size</option>
                 <option>S</option>
                 <option>M</option>
@@ -50,7 +53,7 @@ async function fetchJacketDetail() {
                 <a href="checkOut.html" class="btn">Add To Cart</a>
               </button>
 
-              <h3 class="description">Product Specifications</h3>
+              <h3 class="description">${jacketDetail.description}</h3>
 
     </div>
   </div>
