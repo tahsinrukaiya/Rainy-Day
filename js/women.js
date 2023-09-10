@@ -1,22 +1,22 @@
 //fetching data from rainydays API
 
 const jacket_url = "https://api.noroff.dev/api/v1/rainy-days";
-const products = document.querySelector(".menJacket");
+const products = document.querySelector(".womenJacket");
 
 try {
-    async function getMenJackets() {
+    async function getWomenJackets() {
         //Showing Loading Indication
         loadingIndicator();
         //fetch function in use 
         products.innerHTML = "";
         const response = await fetch(jacket_url); // fetching the url
         const results = await response.json(); // making the url readable that is in JSON format
-        const menJacket = results; // we got an array of objects, putting that array in a variable
+        const womenJacket = results; // we got an array of objects, putting that array in a variable
 
         //TO FILTER OUT THE JACKETS WHICH HAS GENDER MALE
-        const filteredJacket = menJacket.filter(filterJacket);
+        const filteredJacket = womenJacket.filter(filterJacket);
         function filterJacket(jacket) {
-            if (jacket.gender === "Male") {
+            if (jacket.gender === "Female") {
                 return true;
             }
         }
@@ -40,7 +40,7 @@ try {
         products.innerHTML = "<li>Loading...</li>";
     }
 
-    getMenJackets();
+    getWomenJackets();
 }
 
 
