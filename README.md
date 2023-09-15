@@ -1,2 +1,1 @@
-# Rainy-Day
-Noroff Assignment
+# Rainy-Day-InteractionDesign

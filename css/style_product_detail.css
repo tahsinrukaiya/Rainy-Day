@@ -1,7 +1,7 @@
 /*------------------------------------SINGLE PRODUCT DETAIL STYLING--------------------------------------*/
 
 .product_container {
-    margin-top: 100px;
+    margin-top: 2%;
     margin-left: 2%;
     display: flex;
 }
@@ -9,7 +9,7 @@
 .product_container .image_container img {
     padding-top: 10%;
     height: 400px;
-    width: 300px;
+    width: 350px;
 }
 
 .product_container .jacketTitle {

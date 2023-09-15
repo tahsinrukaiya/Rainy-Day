@@ -11,6 +11,18 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://kit.fontawesome.com/04b32c1ad2.js" crossorigin="anonymous"></script>
+
+  <!-- Hotjar Tracking Code for my site -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 3655524, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 </head>
 
 <body>
@@ -24,14 +36,14 @@
       <image src="images/logo-1.png" alt="rainydays logo">
 
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="men.html" class="btn">Men</a></li>
-          <li><a href="women.html">Women</a></li>
-          <li><a href="outlet.html">Outlet</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
-          <li><a href="payment.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+          <li><a class="nav_link" href="index.html">Home</a></li>
+          <li><a class="nav_link" href="men.html">Men</a></li>
+          <li><a class="nav_link" href="women.html">Women</a></li>
+          <li><a class="nav_link" href="outlet.html">Outlet</a></li>
+          <li><a class="nav_link" href="about.html">About Us</a></li>
+          <li><a class="nav_link" href="contact.html">Contact Us</a></li>
+          <li><a class="nav_link" href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+          <li><a class="nav_link" href="payment.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
         </ul>
 
         <div class="search_box">
@@ -44,23 +56,25 @@
     <div class="banner_text">
       <h1>NEW SEASON ARRIVALS</h1>
       <h4>See Here</h4>
-      <button class="button_on_banner"><a href="outlet.html"> Shop Now</a></button>
+      <button class="button_on_banner"><a href="men.html"> Men</a></button>
+      <button class="button_on_banner"><a href="women.html"> Women</a></button>
     </div>
   </div>
 
   <!------------API CALL HERE---------------------DISPLAYING PRODUCT CARDS---------------------------------->
+  <h2 class="heading">POPULAR PRODUCTS</h2>
+  <a class="main" href="productDetail.html">
+    <div class="jacketContainer">
+      <div class="products" onclick="getJackets()">
+        <div class="product">
+          <img src="" alt="" class="product_image">
+          <h4 class="product_title"></h4>
+          <p class="product_price"></p>
+  </a>
+  <a class="favourite" href="favourite.html"><i class="fa-solid fa-bag-shopping"></i></a>
+  </div>
 
-  <div class="jacketContainer">
-    <h2 class="heading">POPULAR PRODUCTS</h2>
-    <div class="products">
-      <div class="product">
-        <img src="" alt="" class="product_image">
-        <h4 class="product_title"></h4>
-        <p class="product_price"></p>
-        <a href="productDetail.html" class="btn"></a>
-      </div>
-
-    </div>
+  </div>
   </div>
 
   <!-----previous hardcoded data
