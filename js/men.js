@@ -16,7 +16,7 @@ try {
         //TO FILTER OUT THE JACKETS WHICH HAS GENDER MALE
         const filteredJacket = menJacket.filter(filterJacket);
         function filterJacket(jacket) {
-            if (jacket.gender === "Male") {
+            if (jacket.gender === "Female") {
                 return true;
             }
         }
