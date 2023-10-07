@@ -1,10 +1,11 @@
 .outletJacketContainer {
-  margin-top: 15%;
+  margin-top: 3%;
 }
 
 .outletJacketContainer h2.heading {
   text-align: center;
   color: #945c54;
+  font-size: 30px;
 }
 
 .outletJacketContainer .outletContainer {
@@ -42,7 +43,7 @@
 .outletJacketContainer .outletContainer .jacket .btn {
   margin-top: 0;
   display: inline-block;
-  background: #945c54;
+  background: #393E46;
   color: white;
   font-size: 17px;
   width: 50%;
@@ -56,4 +57,9 @@
 
 .outletJacketContainer .outletContainer .jacket:hover {
   transform: scale(1.02);
+}
+
+.jacket a {
+  text-decoration: none;
+  color: #393E46;
 }

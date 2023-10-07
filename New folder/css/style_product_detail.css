@@ -1,0 +1,119 @@
+/*------------------------------------SINGLE PRODUCT DETAIL STYLING--------------------------------------*/
+
+.product_container {
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+}
+
+.product_container .image_container img {
+    padding-top: 10%;
+    height: 400px;
+    width: 350px;
+}
+
+.product_container .jacketTitle {
+    color: #393E46;
+    font-size: 24px;
+}
+
+.product_container .price {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #393E46;
+}
+
+.product_container select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.product_container input {
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid gray;
+}
+
+.image_container {
+    border-radius: .5px;
+    background: #fcfbfa;
+    text-align: center;
+    padding: 10px 10px;
+    height: 500px;
+    width: 500px;
+}
+
+.product_detail {
+    flex-basis: 53%;
+    background-color: white;
+    padding: 40px;
+    padding-left: 60px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+    color: grey;
+}
+
+
+.product_container .description {
+    font-size: medium;
+    color: #393E46;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background-color: #945c54;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    border: 0;
+    outline: 0;
+}
+
+
+/*--------------------------------HERE BEGINS THE FOOTER STYLING-------------------------------------------------*/
+
+footer {
+    background-color: #393E46;
+    color: white;
+    padding: 4rem 1rem;
+    height: 200px;
+    margin-top: 50% !important;
+}
+
+
+@media only screen and (max-width:853px) {
+    .product_container {
+        flex-direction: column;
+    }
+
+    .image_container {
+        text-align: center;
+        padding: 10px 10px;
+        height: 300px;
+        width: 300px;
+    }
+
+    .product_container .image_container img {
+        padding-top: 20%;
+        height: 70%;
+        width: 70%;
+        display: block;
+    }
+
+
+}

@@ -12,17 +12,6 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://kit.fontawesome.com/04b32c1ad2.js" crossorigin="anonymous"></script>
-  <!-- Hotjar Tracking Code for my site -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 3655524, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
 </head>
 
 <body>
@@ -38,7 +27,8 @@
         <li><a class="nav_link" href="index.html">Home</a></li>
         <li><a class="nav_link" href="men.html">Men</a></li>
         <li><a class="nav_link" href="women.html">Women</a></li>
-        <li><a class="nav_link" href="outlet.html">Outlet</a></li>
+        <li><a class="nav_link" href="kids.html">Kids</a></li>
+        <li><a class="nav_link" href="outlet.html"><span class="sale">Outlet</span></a></li>
         <li><a class="nav_link" href="about.html">About Us</a></li>
         <li><a class="nav_link" href="contact.html">Contact Us</a></li>
         <li><a class="nav_link" href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
@@ -50,27 +40,44 @@
         <span class="fa-solid fa-magnifying-glass"></span>
       </div>
   </nav>
-
-  <div class="women_banner">
-    <div class="banner_text">
-      <h1>ENJOY RAINY SEASON WEARING RAINYDAY'S RAIN JACKETS</h1>
+  <div class="main">
+    <div class="women_banner1">
     </div>
+    <div class="women_banner2">
+    </div>
+  </div>
+  <div class="banner_text">
+    <h1>ENJOY RAINY SEASON WEARING RAINYDAY'S RAIN JACKETS</h1>
   </div>
 
 
-
-  <!---------------DISPLAYING WOMEN JACKETS---------------------------------->
-  <div class="womenJacketContainer">
-    <h2 class="heading">WOMEN</h2>
-
-    <div class="womenJacket">
-      <div class="jacket">
-        <img src="" alt="">
-        <h4 class="title"></h4>
-        <p class="price"></p>
-        <a href="productDetail.html" class="btn">Buy Now</a>
+  <h1 class="heading">WOMEN</h1>
+  <div class="wrapper">
+    <div class="search_container">
+      <input type="search" class="search_input" placeholder="Search by product type here.." />
+      <button class="search_button">Search</button>
+      <div class="all_buttons">
+        <button class="button_value">All</button>
+        <button class="button_value">Shell Jacket</button>
+        <button class="button_value">Akra Jacket</button>
+        <button class="button_value">Rock Creek Jacket</button>
+        <button class="button_value">Venture Jacket</button>
       </div>
     </div>
+  </div>
+
+  <!---------------DISPLAYING WOMEN JACKETS---------------------------------->
+  <a class="main" href="productDetail.html">
+
+    <div class="womenJacketContainer">
+      <div class="womenJacket">
+        <div class="jacket">
+          <img src="" alt="">
+          <h4 class="title"></h4>
+  </a>
+  <p class="price"></p>
+  </div>
+  </div>
   </div>
 
 

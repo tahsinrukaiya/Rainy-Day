@@ -39,27 +39,38 @@ async function fetchJacketDetail() {
     <div class="product_detail">
       <p class="jacketId">Product Id: ${jacketDetail.id}</p>
       <h2 class="jacketTitle">${jacketDetail.title}<h2>
-          <h6 class="gender">Gender: ${jacketDetail.gender}<h6>
-          <h6 class="price">Price: ${jacketDetail.price}<h6>
-          <h6 class="basecolor">Color: ${jacketDetail.baseColor}<h6>
+          <h5 class="gender">Gender: ${jacketDetail.gender}<h5>
+          <h5 class="season">Season : Autumn/Spring</h5>
+          <h6 class="price">Price: ${jacketDetail.price}kr<h6>
+          <h5 class="basecolor">Color: ${jacketDetail.baseColor}<h5>
+          <div class="color">
+          <span></span>
+            <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+            </div>
               <select class="sizes">Sizes: ${jacketDetail.sizes}
-            
-                <option>Select Size</option>
+               <option>Select Size</option>
                 <option>S</option>
                 <option>M</option>
                 <option>L</option>
                 <option>XL</option>
               </select>
+             
+              <h5 class = "quantity">Quantity</h5>
               <input type="number" value="1">
-              <button>
-                <a href="checkOut.html" class="btn">Add To Cart</a>
-              </button>
-
-              <h3 class="description">${jacketDetail.description}</h3>
-
+              <button class="btn_addToCart">
+              <a href="cart_summery.html" class="btn">Add To Cart</a>
+            </button>
+            <button class="btn_checkOut">
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </button>
+            <h3 class="description">${jacketDetail.description}</h3>
     </div>
   </div>
   </div>
+  
 `;
 
 }

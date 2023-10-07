@@ -1,0 +1,82 @@
+.women_banner {
+  background-image: url(../images/women.jpg);
+  height: 500px;
+  width: 50%;
+  margin-top: 100px;
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center 100%;
+
+}
+
+.banner_text h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+  margin-top: 600px;
+  margin-left: 5%;
+  text-align: left;
+  background: rgba(0, 0, 0, .5);
+  padding: 15px;
+}
+
+/*-------------------------DISPLAYING PRODUCT-CARD CONTAINING WOMEN'S JACKET IMAGES-------------------------------------*/
+
+.womenJacketContainer h2.heading {
+  text-align: center;
+  color: #393E46;
+}
+
+
+.womenJacketContainer .womenJacket {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+
+}
+
+.womenJacketContainer .womenJacket .jacket {
+  border-radius: .5px;
+  background: #fcfbfa;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+
+.womenJacketContainer .womenJacket .jacket img {
+  height: 200px;
+  width: 175px;
+}
+
+.womenJacketContainer .womenJacket .jacket h3 {
+  color: #393E46;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.womenJacketContainer .womenJacket .jacket p {
+  color: #393E46;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.womenJacketContainer .womenJacket .jacket .btn {
+  margin-top: 0;
+  display: inline-block;
+  background: #945c54;
+  color: white;
+  font-size: 17px;
+  width: 50%;
+  padding: 8px 25px;
+  text-decoration: none;
+}
+
+.womenJacketContainer .womenJacket .jacket .btn:hover {
+  letter-spacing: 1px;
+}
+
+.womenJacketContainer .womenJacket .jacket:hover {
+  transform: scale(1.02);
+}

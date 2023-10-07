@@ -26,10 +26,11 @@ try {
         for (let i = 0; i < filteredJacket.length; i++) {
             products.innerHTML += `
             <div class="jacket">
+            <a href="productDetail.html?id=${filteredJacket[i].id}&title=${filteredJacket[i].title}">
             <img src="${filteredJacket[i].image}" class="jacket-image"/>
-            <h4 class="jacket_title">${filteredJacket[i].title}</h4>
+            <h4 class="jacket_title">${filteredJacket[i].title}</h4></a>
             <p class="jacket_price">${filteredJacket[i].price}</p>
-            <a href="productDetail.html?id=${filteredJacket[i].id}&title=${filteredJacket[i].title}" class="btn">Buy Now</a>
+            <a class="favourite" href="favourite.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div> `;
         }
     };

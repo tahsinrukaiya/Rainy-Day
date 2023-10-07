@@ -1,33 +1,106 @@
 /*----------------------BANNER IMAGE ON MENS PAGE------------------------------------------*/
-.men_banner {
+.main {
+  display: flex;
+  gap: 20px;
+}
+
+.main .men_banner1 {
   background-image: url(../images/men.jpg);
   height: 500px;
-  width: 50%;
-  margin-top: 170px;
+  width: 55%;
+  margin-top: 3%;
   padding: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  margin-left: 4%;
   background-size: cover;
   background-position: center 100%;
 }
 
+.main .men_banner2 {
+  background-image: url(../images/man\ jumping\ in\ the\ rain.jpg);
+  height: 500px;
+  width: 350px;
+  margin-top: 3%;
+  padding: 30px;
+  display: flex;
+  background-size: cover;
+  background-position: center 100%;
+}
+
+
 .banner_text h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 100;
-  margin-top: 600px;
-  margin-left: 5%;
-  text-align: left;
+  font-size: 40px;
+  margin-top: 80%;
+  text-align: start;
   background: rgba(0, 0, 0, .5);
   padding: 15px;
-
+  position: relative;
+  right: 40%;
 }
 
 /*-------------------------DISPLAYING PRODUCT-CARD CONTAINING MEN'S JACKET IMAGES-------------------------------------*/
 
-.menJacketContainer h2.heading {
+h1.heading {
   text-align: center;
   color: #393E46;
+  font-size: 30px;
+  margin-top: 23px;
+}
+
+/*FOR FILTERING THE JACKET TYPES-----------------------*/
+
+.wrapper {
+  margin-top: 23px;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper .search_container {
+  margin: 1em 0;
+
+}
+
+.wrapper .search_container input {
+  background-color: transparent;
+  width: 40%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid #393E46;
+  padding: 1em 0.3em;
+}
+
+.wrapper .search_container input:focus {
+  border-bottom-color: #393E46;
+}
+
+.wrapper .search_container .search_button {
+  padding: 1em;
+  margin-left: 1em;
+  background-color: #945c54;
+  color: #fff;
+  width: 100px;
+  border: none;
+  margin-top: 20px;
+}
+
+.wrapper .search_container .search_button:hover {
+  letter-spacing: 1px;
+}
+
+.wrapper .search_container .all_buttons button {
+  padding: 1em 2.2em;
+  background-color: #393E46;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.wrapper .search_container .all_buttons button:hover {
+  letter-spacing: 1px;
 }
 
 
@@ -35,6 +108,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+  margin-top: 40px;
 }
 
 .menJacketContainer .menJacket .jacket {
@@ -52,7 +126,7 @@
 
 .menJacketContainer .menJacket .jacket h4.jacket_title {
   color: #393E46;
-  font-size: 22px;
+  font-size: 18px;
   padding: 10px 0;
 }
 
@@ -65,11 +139,16 @@
 .menJacketContainer .menJacket .jacket .btn {
   margin-top: 0;
   display: inline-block;
-  background: #945c54;
+  background: #393E46;
+  ;
   color: white;
   font-size: 17px;
   width: 50%;
   padding: 8px 25px;
+  text-decoration: none;
+}
+
+.jacket a {
   text-decoration: none;
 }
 
@@ -105,7 +184,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #945c54;
+  color: white;
 
 }
 
@@ -172,4 +251,36 @@ form button:hover {
 
 .copyright {
   margin-right: auto;
+}
+
+/*--------------------------MEDIA QUERY FOR BANNER---------------------------------------*/
+
+@media screen and (min-width:1900px) {
+
+  .banner_text h1 {
+    font-size: 50px;
+    margin-top: 50%;
+  }
+
+  .main .men_banner1 {
+    width: 40%;
+    margin-left: 18%;
+    height: 600px;
+  }
+
+  .main .men_banner2 {
+    background-image: url(../images/man\ jumping\ in\ the\ rain.jpg);
+    height: 600px;
+    width: 400px;
+  }
+
+  h1.heading {
+    font-size: 40px;
+    margin-top: 2%;
+  }
+
+  .wrapper {
+    margin-top: 5%;
+  }
+
 }
